@@ -1,0 +1,7 @@
+.main + p {
+  color: #ff0000;
+}
+
+div ~ p {
+  background-color: #0000ff;
+}

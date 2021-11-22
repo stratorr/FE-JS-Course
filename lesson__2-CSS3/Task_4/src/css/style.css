@@ -1,0 +1,7 @@
+div p {
+  color: #ff0000;
+}
+
+#first > p {
+  background-color: #0000ff;
+}
