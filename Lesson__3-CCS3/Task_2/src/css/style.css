@@ -1,0 +1,23 @@
+
+/* p {
+  color: #0000ff; 
+} - HEX */
+
+/* p {
+  color: hsl(240, 100%, 50%);
+}  - HSL */
+
+/* p {
+  color: rgb(0, 0, 255, .4);
+} - RGBA */ 
+
+p {
+  color: rgb(0, 0, 255);
+}
+
+body {
+  opacity: .3;
+  /* color: rgb(0, 0, 255, 0.3); */
+}
+
+

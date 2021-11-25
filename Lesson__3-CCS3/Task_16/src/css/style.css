@@ -1,0 +1,6 @@
+div {
+  width: 100px;
+  margin-left: 50px;
+  box-shadow: -20px 0px 10px 0px #068000, 
+  20px 0px 10px 0px #FF0000;
+}

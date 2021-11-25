@@ -1,0 +1,8 @@
+div {
+  outline: 4px dotted red;
+  outline-offset: -5px;
+}
+
+p {
+  border: double;
+}

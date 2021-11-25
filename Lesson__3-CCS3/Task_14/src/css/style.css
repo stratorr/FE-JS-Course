@@ -1,0 +1,53 @@
+table {
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  padding: 25px;
+  border-spacing: 0px;
+}
+
+td {
+  padding: 10px;
+}
+/* oval-blue */
+
+.oval-blue {
+  background-color: blue;
+}
+
+#one {
+  border-radius: 30px 30px 0 0;
+}
+
+#seven {
+  border-radius: 0 0 30px 30px;
+}
+
+/* oval-red */
+
+.oval-red {
+  background-color: red;
+}
+
+#two {
+  border-radius: 20px 0 0 0;
+}
+
+#eight {
+  border-radius: 0 0 0 20px;
+}
+
+#three,
+#nine {
+  border-radius: 0 35px 35px 0;
+}
+
+/* circle */
+
+.circle-blue {
+  background-color: blue;
+  border-radius: 50%;
+}
+
+/* ID с именем (one,two...) это номера ячеек, каждый класс содержит свои ячейки для формирования фигуры которая была в задании.*/

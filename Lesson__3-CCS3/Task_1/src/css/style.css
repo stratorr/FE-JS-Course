@@ -1,0 +1,30 @@
+body {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.text {
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+.hex h1 {
+  color: #fa7233;
+}
+
+.color-name {
+  color: blue;
+}
+
+.rgb {
+  color: rgb(158, 32, 91);
+}
+
+.hsl {
+  color: hsl(19, 95%, 59%);
+}
+
+.rgb-hsl {
+  color: rgba(33, 36, 199, 0.3);
+}

@@ -1,0 +1,12 @@
+.happyCat {
+    margin: 100px auto;
+    width: 500px;
+    height: 300px;
+    box-shadow: 60px 60px 10px 5px #0004ff, 
+    -60px -60px 10px 5px #ff0004, 
+    inset 60px -70px 15px 3px #008000, 
+    inset -70px 60px 15px 3px #000000;
+    background: url(/Task_19/src/img/meme.jpg) no-repeat;
+    background-position: center;
+    background-size: 52%;
+}

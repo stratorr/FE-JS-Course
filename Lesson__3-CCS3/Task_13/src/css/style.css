@@ -1,0 +1,8 @@
+table {
+  border-spacing: 20px;
+  empty-cells: hide;
+}
+
+td {
+  border: 3px dotted #008000;
+}
