@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+div {
+  width: 25%;
+  /* display: inline;
+  float: left;  */
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* Возможно два решения, через Flexbox и через float с display:inline */

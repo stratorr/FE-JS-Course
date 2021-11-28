@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+div {
+  border: 2px solid black;
+  width: 150px;
+}
+
+body div:nth-child(odd) {
+  order: 1;
+}
+
+body div:nth-child(6) {
+  margin-right: auto;
+}
+
+#fifth {
+  order: 1;
+}
+
+#third {
+  order: 2;
+}
+
+#first {
+  order: 3;
+}

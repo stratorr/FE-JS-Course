@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-red {
+  background-color: #ff0000;
+  width: 90%;
+}
+
+.bg-green {
+  background-color: #008000;
+  float: left;
+  width: 10%;
+}
+
+.rightSide {
+  float: right;
+}
+
+.leftSide {
+  float: left;
+}
