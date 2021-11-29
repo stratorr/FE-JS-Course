@@ -4,41 +4,48 @@
   padding: 0;
 }
 
-div {
-  color: white;
+body {
+  display: flex;
+  height: 120px;
+  color: #fff;
 }
 
-.red {
-  width: 20%;
-  float: left;
+.item-wrapper-1 {
+  display: flex;
+  width: 70%;
+  height: 120px;
 }
 
-.blue {
-  width: 50%;
-  float: right;
+.item-wrapper-2 {
+  display: flex;
+  width: 70%;
+  height: 120px;
 }
 
-.pink {
-  width: 20%;
-  float: right;
-}
-
-.lightBlue {
-  float: left;
+.item-1 {
   width: 30%;
+  height: 40px;
 }
 
-.yellow {
-  width: 50%;
-  float: left;
+.item-2 {
+  order: 1;
+  width: 30%;
+  height: 80px;
 }
 
-.black {
-  float: left;
-  width: 50%;
+.item-3 {
+  order: 2;
+  width: 40%;
 }
 
-.green {
-  width: 80%;
-  float: right;
+.item-4 {
+  order: 3;
+  width: 30%;
+  height: 40px;
+}
+
+.item-5 {
+  order: 2;
+  width: 30%;
+  height: 40px;
 }
