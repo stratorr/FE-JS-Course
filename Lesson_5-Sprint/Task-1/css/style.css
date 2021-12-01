@@ -1,0 +1,39 @@
+.flex-container {
+  width: 450px;
+  height: 140px;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: wrap-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+div {
+  border: 2px solid black;
+  width: 200px;
+  height: 30px;
+}
+
+.box-5 {
+  order: 4;
+}
+
+.box-1 {
+  order: 4;
+}
+
+.box-2 {
+  order: 1;
+}
+
+.box-4 {
+  order: 4;
+  align-items: flex-end;
+}
+
+[class|="box"] {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}

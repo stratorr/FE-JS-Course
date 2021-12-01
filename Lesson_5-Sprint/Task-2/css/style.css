@@ -1,0 +1,37 @@
+.flex-container {
+  width: 450px;
+  height: 140px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+div {
+  border: 1px solid black;
+  width: 200px;
+  height: 30px;
+}
+
+.box-5 {
+  align-self: flex-end;
+}
+
+.box-1 {
+  align-self: flex-end;
+}
+
+.box-2,
+.box-4 {
+  align-self: center;
+}
+
+.box-3 {
+  align-self: center center;
+}
+
+[class|="box"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
