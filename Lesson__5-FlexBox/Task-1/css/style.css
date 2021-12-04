@@ -1,0 +1,66 @@
+div {
+  padding: 5px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.flex-container {
+  display: flex;
+  width: 400px;
+}
+
+[class|="item"] {
+  flex-basis: 200px;
+}
+
+/* width 400px */
+
+/* .item-1 {
+  flex-shrink: 1;
+}
+
+.item-2 {
+  flex-shrink: 1.5;
+}
+.item-3 {
+  flex-shrink: 1;
+}
+.item-4 {
+  flex-shrink: 1.5;
+} */
+
+/* width 400px */
+
+/* width 500px */
+/* 
+.item-1 {
+  flex-shrink: 1;
+}
+
+.item-2 {
+  flex-shrink: 1;
+}
+.item-3 {
+  flex-shrink: 1;
+}
+.item-4 {
+  flex-shrink: 1;
+} */
+
+/* width 500px */
+
+/* width 600px */
+
+/* .item-1 {
+  flex-shrink: 1.5;
+}
+
+.item-2 {
+  flex-shrink: 1.5;
+}
+.item-3 {
+  flex-shrink: 1;
+}
+.item-4 {
+  flex-shrink: 1;
+} */

@@ -1,0 +1,36 @@
+.flex-container div {
+  border: 1px solid black;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-wrap div:first-child,
+.flex-wrap div:last-child {
+  flex-grow: 0;
+}
+
+@media (max-width: 768px) {
+  .flex-wrap div:first-child,
+  .flex-wrap div:last-child {
+    flex-grow: 0;
+  }
+
+  .flex-wrap div:nth-child(2) {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 320px) {
+  .flex-wrap {
+    flex-direction: column;
+  }
+}
