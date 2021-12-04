@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header__top">
+      <div class="container">
+        <nav class="header__top-menu">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О Нас</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <nav class="header__top-info">
+          <div class="tel">
+            <img src="/src/img/phone.svg" alt="" />
+            <a href="tel:+380997983104">+380997983104</a>
+          </div>
+          <div class="delivery">
+            <img src="/src/img/delivery-icon.svg" alt="" />
+            <a href="#">Доставка</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="header">
+      <div class="container">
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- /.hamburger -->
+        <a href=""><img src="../src/img/LOGO.png" alt="" /></a>
+        <div class="header__search">
+          <input type="search" placeholder="Поиск..." />
+        </div>
+        <div class="header__user-bar">
+          <a href=""> <img src="../src/img/wishlist-icon.png" alt="" /></a>
+          <a href=""><img src="../src/img/bag.png" alt="" /></a>
+          <a href=""> <img src="../src/img/profile-icon.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="header__category">
+        <div class="container">
+          <div class="category-menu">
+            <div class="category__item">
+              <img src="/src/img/kitchen-icon.png" alt="" />
+              <a href="">Кухня</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/bedroom-icon.png" alt="" />
+              <a href="">Спальни</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/livingroom-icon.png" alt="" />
+              <a href="">Гостинные</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/closet-icon.png" alt="" />
+              <a href="">Прихожие</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/office-icon.png" alt="" />
+              <a href="">Офсиная Мебель</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/childrensroom-icon.png" alt="" />
+              <a href="">Детская</a>
+            </div>
+            <div class="category__item">
+              <a href="">Акции</a>
+            </div>
+            <div class="category__item">
+              <a href="" style="font-size: large">&#x22EE;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text"><div class="container">Главная / Корзина</div></div>
+    </section>
+
+    <secion class="cart">
+      <div class="container">
+        <div class="cart__card">
+          <div class="cart__card-item">
+            <img src="../src/img/divan.png" alt="" />
+            <div class="card__item-text">
+              <div class="text">Каскайден Navy Blue</div>
+              <div class="price">2000 грн</div>
+              <div class="color">Цвет: <span>navy blue</span></div>
+            </div>
+          </div>
+          <div class="delete">
+            <img src="../src/img/free-png.ru-38.png" alt="" />
+          </div>
+        </div>
+        <div class="cart__card">
+          <div class="cart__card-item">
+            <img src="../src/img/divan.png" alt="" />
+            <div class="card__item-text">
+              <div class="text">Каскайден Navy Blue</div>
+              <div class="price">2000 грн</div>
+              <div class="color">Цвет: <span>navy blue</span></div>
+            </div>
+          </div>
+          <div class="delete">
+            <img src="../src/img/free-png.ru-38.png" alt="" />
+          </div>
+        </div>
+        <div class="cart__card">
+          <div class="cart__card-item">
+            <img src="../src/img/divan.png" alt="" />
+            <div class="card__item-text">
+              <div class="text">Каскайден Navy Blue</div>
+              <div class="price">2000 грн</div>
+              <div class="color">Цвет: <span>navy blue</span></div>
+            </div>
+          </div>
+          <div class="delete">
+            <img src="../src/img/free-png.ru-38.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="text">Итоговая стоимость: 6000 грн</div>
+        <button class="btn">
+          <a href="#openModal">Оформить Заказ</a>
+        </button>
+
+        <!--  -->
+        <div id="openModal" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Оформление Заказа</h3>
+                <a href="#close" title="Close" class="close">×</a>
+              </div>
+              <div class="modal-body">
+                <form method="post" name="form">
+                  <input name="name" type="text" placeholder="Фио" />
+                  <br />
+                  <input name="email" type="text" placeholder="Email" />
+                  <br />
+                  <input name="tel" type="tel" placeholder="Номер Телефона" />
+                  <br />
+                  <input
+                    name="country"
+                    type="text"
+                    placeholder="Страна Доставки"
+                  />
+                  <br />
+                  <input
+                    name="post"
+                    type="text"
+                    placeholder="Отделение Почты"
+                  />
+                  <br />
+                  <input type="submit" value="Заказать" class="submit" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secion>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="text">Навигация</div>
+        <div class="footer__nav">
+          <div class="footer__nav-wrap">
+            <div>
+              <ul>
+                <li><a href="#">Кухня</a></li>
+                <li><a href="#">Спальни</a></li>
+                <li><a href="#">Гостинные</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">Прихожие</a></li>
+                <li><a href="#">Офсиная Мебель</a></li>
+                <li><a href="#">Детская</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">Шкафы</a></li>
+                <li><a href="#">Матрасы</a></li>
+                <li><a href="#">Мягкая мебель</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__info">
+            <a href="#"><img src="../src/img/footer logo.png" alt="" /></a>
+            <div class="desq">г.Харьков улица научная 41/2</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+  </body>
+</html>

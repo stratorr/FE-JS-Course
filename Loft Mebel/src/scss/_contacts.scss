@@ -1,0 +1,105 @@
+/*Задаём общие параметры для всей страницы: шрифт и отступы*/
+body {
+  /*text-align: center;*/
+  margin: 10;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+/* Настраиваем внешний вид полей ввода*/
+input {
+  display: inline-block;
+  margin: 10px auto;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+textarea {
+  display: inline-block;
+  margin: 10px auto;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.submit {
+  cursor: pointer;
+  transition: 0.1s ease-in;
+  margin-bottom: 50px;
+}
+
+.submit:hover {
+  background: transparent;
+}
+
+.form__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__info {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social img {
+  margin-right: 10px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(170, 43, 43);
+}
+
+.footer {
+  padding: 30px;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
+
+  .container {
+    display: block;
+  }
+
+  .text {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: #d74444;
+    transition: 0.2s linear;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-wrap {
+    display: flex;
+  }
+
+  &__nav-wrap div + div {
+    margin-left: 30px;
+  }
+}

@@ -4,10 +4,179 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Loft Mebel</title>
+    <link rel="stylesheet" href="../src/libs/bootstrap-grid.min.css" />
   </head>
   <body>
-    <h1 class="title">Hello world!</h1>
+    <header class="header__top">
+      <div class="container">
+        <nav class="header__top-menu">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О Нас</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <nav class="header__top-info">
+          <div class="tel">
+            <img src="/src/img/phone.svg" alt="" />
+            <a href="tel:+380997983104">+380997983104</a>
+          </div>
+          <div class="delivery">
+            <img src="/src/img/delivery-icon.svg" alt="" />
+            <a href="#">Доставка</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="header">
+      <div class="container">
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- /.hamburger -->
+        <a href=""><img src="../src/img/LOGO.png" alt="" /></a>
+        <div class="header__search">
+          <input type="search" placeholder="Поиск..." />
+        </div>
+        <div class="header__user-bar">
+          <a href=""> <img src="../src/img/wishlist-icon.png" alt="" /></a>
+          <a href=""><img src="../src/img/bag.png" alt="" /></a>
+          <a href=""> <img src="../src/img/profile-icon.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="header__category">
+        <div class="container">
+          <div class="category-menu">
+            <div class="category__item">
+              <img src="/src/img/kitchen-icon.png" alt="" />
+              <a href="">Кухня</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/bedroom-icon.png" alt="" />
+              <a href="">Спальни</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/livingroom-icon.png" alt="" />
+              <a href="">Гостинные</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/closet-icon.png" alt="" />
+              <a href="">Прихожие</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/office-icon.png" alt="" />
+              <a href="">Офсиная Мебель</a>
+            </div>
+            <div class="category__item">
+              <img src="/src/img/childrensroom-icon.png" alt="" />
+              <a href="">Детская</a>
+            </div>
+            <div class="category__item">
+              <a href="">Акции</a>
+            </div>
+            <div class="category__item">
+              <a href="" style="font-size: large">&#x22EE;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container">
+        <div class="banner__content">
+          <div class="banner__content-wrap">
+            <h1 class="title">
+              loft <br />
+              мебель
+            </h1>
+            <div class="desq">Современная и удобная мебель в Харькове</div>
+            <button class="btn">СМОТРЕТЬ КАТАЛОГ</button>
+          </div>
+        </div>
+      </div>
+      <div class="text"><div class="container">Хиты продаж</div></div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="product__card">
+          <div class="product__card-item">
+            <img src="../src/img/image 2.png" alt="" />
+            <div class="text">Стул</div>
+            <div class="desq">Барные стулья</div>
+            <div class="price">700 грн</div>
+            <button class="btn">Добавить в корзину</button>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__card-item">
+            <img src="../src/img/image 2.png" alt="" />
+            <div class="text">Стул</div>
+            <div class="desq">Барные стулья</div>
+            <div class="price">700 грн</div>
+            <button class="btn">Добавить в корзину</button>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__card-item">
+            <img src="../src/img/image 2.png" alt="" />
+            <div class="text">Стул</div>
+            <div class="desq">Барные стулья</div>
+            <div class="price">700 грн</div>
+            <button class="btn">Добавить в корзину</button>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__card-item">
+            <img src="../src/img/image 2.png" alt="" />
+            <div class="text">Стул</div>
+            <div class="desq">Барные стулья</div>
+            <div class="price">700 грн</div>
+            <button class="btn">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="text">Навигация</div>
+        <div class="footer__nav">
+          <div class="footer__nav-wrap">
+            <div>
+              <ul>
+                <li><a href="#">Кухня</a></li>
+                <li><a href="#">Спальни</a></li>
+                <li><a href="#">Гостинные</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">Прихожие</a></li>
+                <li><a href="#">Офсиная Мебель</a></li>
+                <li><a href="#">Детская</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">Шкафы</a></li>
+                <li><a href="#">Матрасы</a></li>
+                <li><a href="#">Мягкая мебель</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__info">
+            <a href="#"><img src="../src/img/footer logo.png" alt="" /></a>
+            <div class="desq">г.Харьков улица научная 41/2</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
   </body>
 </html>

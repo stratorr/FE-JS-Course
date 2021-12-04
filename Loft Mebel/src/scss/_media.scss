@@ -1,0 +1,84 @@
+@media (max-width: 1400px) {
+  .container {
+    .product__card:first-child {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__search input {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__top {
+    display: none;
+  }
+
+  .header__search input {
+    width: 300px;
+  }
+
+  .banner__content {
+    height: 400px;
+  }
+
+  .banner__content title {
+    margin-top: 75px;
+  }
+
+  .hamburger div {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  .category__item .points div {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  .category-menu div:nth-child(1),
+  .category-menu div:nth-child(2) {
+    display: none;
+  }
+
+  .container {
+    .product__card:first-child {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .category-menu .category__item {
+    flex-direction: column;
+  }
+
+  .category__item {
+    font-size: 12px;
+  }
+
+  .banner__content {
+    height: 300px;
+  }
+
+  .banner__content .title {
+    margin-top: 40px;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .products .product__card-item {
+    width: 250px;
+  }
+}
