@@ -14,5 +14,8 @@
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.1"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "form-data": "^4.0.0"
+  }
 }

@@ -176,9 +176,12 @@ input {
   width: 100%; }
   .products .container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: center;
+    align-items: center; }
   .products .product__card-item {
+    margin: 0 auto;
     margin-bottom: 50px;
+    margin-right: 50px;
     box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
     position: relative;
     width: 300px;
@@ -224,8 +227,8 @@ input {
     border: 1px solid black; }
 
 @media (max-width: 1400px) {
-  .container .product__card:first-child {
-    display: none; } }
+  .container .product__card-item {
+    width: 250px; } }
 
 @media (max-width: 1200px) {
   .header__search input {
@@ -505,3 +508,15 @@ a:hover {
 .modal-body form {
   display: flex;
   flex-direction: column; }
+
+.text {
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+
+.text .btn {
+  background: 1px solid black;
+  border: none; }
+
+.text img {
+  margin-left: 10px; }

@@ -1,0 +1,14 @@
+.text {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text .btn {
+  background: 1px solid black;
+  border: none;
+}
+
+.text img {
+  margin-left: 10px;
+}
