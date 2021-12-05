@@ -103,3 +103,19 @@ a:hover {
     margin-left: 30px;
   }
 }
+
+.contacts__info {
+  .contacts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contacts a {
+    margin-right: 50px;
+  }
+
+  .contacts img {
+    margin-right: 10px;
+  }
+}

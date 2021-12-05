@@ -20,6 +20,10 @@
     }
   }
 
+  .container {
+    margin-bottom: 50px;
+  }
+
   .delete {
     margin-left: auto;
     width: 30px;
@@ -61,10 +65,6 @@
   align-items: center;
 }
 
-.footer {
-  margin-top: 50px;
-}
-
 .modal {
   position: fixed; /* фиксированное положение */
   top: 0;
@@ -92,13 +92,9 @@
   position: relative;
   width: auto;
   margin: 10px;
+  margin: 100px auto;
 }
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 500px;
-    margin: 30px auto; /* для отображения модального окна по центру */
-  }
-}
+
 /* свойства для блока, содержащего контент модального окна */
 .modal-content {
   position: relative;
@@ -118,12 +114,7 @@
   border-radius: 0.3rem;
   outline: 0;
 }
-@media (min-width: 768px) {
-  .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-}
+
 /* свойства для заголовка модального окна */
 .modal-header {
   display: -webkit-box;
@@ -177,6 +168,11 @@
   flex: 1 1 auto;
   padding: 15px;
   overflow: auto;
+  .logo {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
 .modal-body form {

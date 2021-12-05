@@ -235,6 +235,14 @@ input {
     width: 400px; } }
 
 @media (max-width: 992px) {
+  .header .container {
+    max-width: 100%; }
+  .banner .container {
+    max-width: 100%; }
+  .products .container {
+    max-width: 100%; }
+  .container {
+    max-width: 100%; }
   .header__top {
     display: none; }
   .header__search input {
@@ -264,6 +272,12 @@ input {
 @media (max-width: 768px) {
   .category-menu .category__item {
     flex-direction: column; }
+  .banner__content .title {
+    font-size: 30px; }
+  .banner__content-wrap {
+    margin-left: 50px; }
+  .banner .container {
+    max-width: 100%; }
   .category__item {
     font-size: 12px; }
   .banner__content {
@@ -273,7 +287,20 @@ input {
   .header__search {
     display: none; }
   .products .product__card-item {
-    width: 250px; } }
+    width: 250px;
+    margin: 10px auto; }
+  .footer__nav {
+    flex-direction: column; }
+  .footer__info {
+    margin-top: 30px; }
+  .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); } }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+    /* для отображения модального окна по центру */ } }
 
 /*Задаём общие параметры для всей страницы: шрифт и отступы*/
 body {
@@ -356,6 +383,17 @@ a:hover {
   .footer__nav-wrap div + div {
     margin-left: 30px; }
 
+.contacts__info .contacts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.contacts__info .contacts a {
+  margin-right: 50px; }
+
+.contacts__info .contacts img {
+  margin-right: 10px; }
+
 .cart .cart__card {
   padding: 22px 20px;
   display: flex;
@@ -371,6 +409,9 @@ a:hover {
       background-color: #343d4c; }
   .cart .cart__card-item img {
     margin-right: 40px; }
+
+.cart .container {
+  margin-bottom: 50px; }
 
 .cart .delete {
   margin-left: auto;
@@ -404,9 +445,6 @@ a:hover {
   justify-content: flex-start;
   align-items: center; }
 
-.footer {
-  margin-top: 50px; }
-
 .modal {
   position: fixed;
   /* фиксированное положение */
@@ -439,13 +477,8 @@ a:hover {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px; }
-
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 500px;
-    margin: 30px auto;
-    /* для отображения модального окна по центру */ } }
+  margin: 10px;
+  margin: 100px auto; }
 
 /* свойства для блока, содержащего контент модального окна */
 .modal-content {
@@ -458,10 +491,6 @@ a:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0; }
-
-@media (min-width: 768px) {
-  .modal-content {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); } }
 
 /* свойства для заголовка модального окна */
 .modal-header {
@@ -504,6 +533,10 @@ a:hover {
   flex: 1 1 auto;
   padding: 15px;
   overflow: auto; }
+  .modal-body .logo {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px; }
 
 .modal-body form {
   display: flex;

@@ -13,6 +13,22 @@
 }
 
 @media (max-width: 992px) {
+  .header .container {
+    max-width: 100%;
+  }
+
+  .banner .container {
+    max-width: 100%;
+  }
+
+  .products .container {
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
   .header__top {
     display: none;
   }
@@ -62,6 +78,18 @@
     flex-direction: column;
   }
 
+  .banner__content .title {
+    font-size: 30px;
+  }
+
+  .banner__content-wrap {
+    margin-left: 50px;
+  }
+
+  .banner .container {
+    max-width: 100%;
+  }
+
   .category__item {
     font-size: 12px;
   }
@@ -80,5 +108,26 @@
 
   .products .product__card-item {
     width: 250px;
+    margin: 10px auto;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+  }
+
+  .footer__info {
+    margin-top: 30px;
+  }
+
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto; /* для отображения модального окна по центру */
   }
 }
