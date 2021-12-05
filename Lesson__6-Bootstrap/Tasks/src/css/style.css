@@ -1,0 +1,13 @@
+[class*="col-"] {
+  border: 1px black solid;
+}
+
+.card {
+  margin-top: 50px;
+  width: 30%;
+}
+
+.text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
