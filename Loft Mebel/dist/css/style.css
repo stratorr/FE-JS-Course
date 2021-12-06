@@ -13,6 +13,12 @@ a {
 img {
   max-width: 100%; }
 
+body {
+  /*text-align: center;*/
+  margin: 10;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px; }
+
 textarea {
   resize: none;
   outline: none; }
@@ -372,12 +378,6 @@ input {
     font-size: 13px; } }
 
 /*Задаём общие параметры для всей страницы: шрифт и отступы*/
-body {
-  /*text-align: center;*/
-  margin: 10;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 16px; }
-
 /* Настраиваем внешний вид полей ввода*/
 input {
   display: inline-block;
@@ -472,6 +472,9 @@ a:hover {
 .contacts__info-content .inst {
   margin-bottom: 10px; }
 
+.contacts__info-content .text {
+  cursor: text; }
+
 .cart .cart__card {
   padding: 22px 20px;
   display: flex;
@@ -486,7 +489,7 @@ a:hover {
     justify-content: center;
     align-items: center; }
     .cart .cart__card-item .color span {
-      background-color: #343d4c; }
+      background-color: #e5b44b; }
   .cart .cart__card-item img {
     margin-right: 40px; }
 
