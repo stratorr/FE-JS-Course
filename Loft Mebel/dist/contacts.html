@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="../src/libs/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Contacts</title>
   </head>
   <body>
@@ -69,7 +71,7 @@
             </div>
             <div class="category__item">
               <img src="/src/img/office-icon.png" alt="" />
-              <a href="">Офсиная Мебель</a>
+              <a href="">Офисная Мебель</a>
             </div>
             <div class="category__item">
               <img src="/src/img/childrensroom-icon.png" alt="" />
@@ -89,7 +91,7 @@
 
     <section class="form">
       <div class="text">
-        <div class="container">Как связаться со службой поддержки</div>
+        <div class="container">Как связаться со службой поддержки? <br /></div>
       </div>
       <div class="container">
         <div class="form__wrap">
@@ -117,13 +119,15 @@
           </div>
           <div class="contacts__info">
             <div class="contacts__info-content">
-              <div class="contacts">
+              <div class="tel">
                 <img src="/src/img/phone.png" alt="" />
                 <a href="tel:+38099749123">099749123</a>
+              </div>
+              <div class="mail">
                 <img src="/src/img/mail.png" alt="" />
                 <a href="mailto:test@gmail.com">LoftMebel@gmail.com</a>
               </div>
-              <div class="contacts">
+              <div class="inst">
                 <img src="/src/img/inst.png" alt="" />
                 <a href="#">LM_Kharkov</a>
               </div>
@@ -150,7 +154,7 @@
             <div>
               <ul>
                 <li><a href="#">Прихожие</a></li>
-                <li><a href="#">Офсиная Мебель</a></li>
+                <li><a href="#">Офисная Мебель</a></li>
                 <li><a href="#">Детская</a></li>
               </ul>
             </div>
@@ -169,5 +173,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

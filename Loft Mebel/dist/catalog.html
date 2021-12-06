@@ -7,6 +7,7 @@
     <title>Catalog</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="../src/libs/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header__top">
@@ -69,7 +70,7 @@
             </div>
             <div class="category__item">
               <img src="/src/img/office-icon.png" alt="" />
-              <a href="">Офсиная Мебель</a>
+              <a href="">Офисная Мебель</a>
             </div>
             <div class="category__item">
               <img src="/src/img/childrensroom-icon.png" alt="" />
@@ -86,20 +87,20 @@
       </div>
       <div class="container">
         <div class="text">Главная / Гостинные / Мебель / Диваны</div>
-
+      </div>
+    </section>
+    <div class="container">
+      <div class="filter">
         <div class="text">
           <button class="btn">Фильтр</button>
-          <img
-            src="https://img.icons8.com/material-rounded/24/000000/filter.png"
-          />
+          <img src="https://img.icons8.com/ios-glyphs/30/000000/filter.png" />
         </div>
         <div class="text">
           <button class="btn">Сортировка</button>
           <img src="https://img.icons8.com/ios/24/000000/sorting-answers.png" />
         </div>
       </div>
-    </section>
-
+    </div>
     <section class="products">
       <div class="container">
         <div class="row">
@@ -140,8 +141,8 @@
             <div class="product__card">
               <div class="product__card-item">
                 <img src="../src/img/tumba.png" alt="" />
-                <div class="text">Тумба Юмба</div>
-                <div class="desq">Тумбочки</div>
+                <div class="text">Шкаф</div>
+                <div class="desq">Шкаф</div>
                 <div class="price">30000 грн</div>
                 <button class="btn">Добавить в корзину</button>
               </div>
@@ -151,9 +152,9 @@
             <div class="product__card">
               <div class="product__card-item">
                 <img src="../src/img/tumba 1.png" alt="" />
-                <div class="text">Тумба 1945</div>
+                <div class="text">Тумба Венеция</div>
                 <div class="desq">Тумбочки</div>
-                <div class="price">1488 грн</div>
+                <div class="price">9000 грн</div>
                 <button class="btn">Добавить в корзину</button>
               </div>
             </div>
@@ -162,7 +163,7 @@
             <div class="product__card">
               <div class="product__card-item">
                 <img src="../src/img/tumba 2.png" alt="" />
-                <div class="text">Тумба Сыщик</div>
+                <div class="text">Тумбочка</div>
                 <div class="desq">Тумбочки</div>
                 <div class="price">2280 грн</div>
                 <button class="btn">Добавить в корзину</button>
@@ -210,7 +211,7 @@
             <div>
               <ul>
                 <li><a href="#">Прихожие</a></li>
-                <li><a href="#">Офсиная Мебель</a></li>
+                <li><a href="#">Офисная Мебель</a></li>
                 <li><a href="#">Детская</a></li>
               </ul>
             </div>
@@ -230,5 +231,9 @@
       </div>
     </footer>
     <!-- /.footer -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

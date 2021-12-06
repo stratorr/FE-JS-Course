@@ -71,11 +71,36 @@
       display: block;
     }
   }
+
+  .form {
+    .container {
+      max-width: 100%;
+    }
+    .form__wrap {
+      flex-direction: column;
+    }
+
+    .contacts__info {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 250px;
+    }
+
+    textarea {
+      width: 250px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .category-menu .category__item {
     flex-direction: column;
+  }
+
+  a {
+    font-size: 13px;
   }
 
   .banner__content .title {
@@ -107,16 +132,27 @@
   }
 
   .products .product__card-item {
+    height: 340px;
     width: 250px;
     margin: 10px auto;
   }
 
-  .footer__nav {
-    flex-direction: column;
+  .products .product__card .btn {
+    width: 175px;
   }
 
-  .footer__info {
-    margin-top: 30px;
+  .footer {
+    .footer__nav {
+      flex-direction: column;
+    }
+
+    .footer__nav-wrap {
+      justify-content: space-between;
+    }
+
+    .footer__info {
+      margin-top: 30px;
+    }
   }
 
   .modal-content {
@@ -129,5 +165,85 @@
   .modal-dialog {
     max-width: 500px;
     margin: 30px auto; /* для отображения модального окна по центру */
+  }
+
+  .header__user-bar img {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .form__wrap input,
+  .form__wrap textarea {
+    width: 320px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__user-bar img {
+    margin-left: 10px;
+  }
+
+  .category-menu div:nth-child(5),
+  .category-menu div:nth-child(7) {
+    display: none;
+
+    .category-menu {
+      padding: 0;
+    }
+  }
+
+  .cart {
+    .cart__card {
+      height: 235px !important;
+
+      &-item {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    font-size: 12px;
+    .footer__nav-wrap {
+      font-size: 12px;
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .header__user-bar img {
+    margin-left: 10px;
+  }
+
+  .category-menu {
+    padding: 5px 5px;
+  }
+
+  .checkout .text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header .logo {
+    width: 90%;
+    margin-left: 3px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .form__wrap input,
+  .form__wrap textarea {
+    width: 280px !important;
+  }
+
+  .contacts__info-content .text {
+    font-size: 13px;
   }
 }

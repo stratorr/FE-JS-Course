@@ -49,6 +49,13 @@ textarea {
   margin-bottom: 10px;
 }
 
+.form__content {
+  input,
+  textarea {
+    width: 500px;
+  }
+}
+
 .social {
   display: flex;
   justify-content: center;
@@ -117,5 +124,12 @@ a:hover {
 
   .contacts img {
     margin-right: 10px;
+  }
+  &-content {
+    .tel,
+    .mail,
+    .inst {
+      margin-bottom: 10px;
+    }
   }
 }

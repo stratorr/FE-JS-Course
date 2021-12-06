@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header__top">
@@ -68,7 +69,7 @@
             </div>
             <div class="category__item">
               <img src="/src/img/office-icon.png" alt="" />
-              <a href="">Офсиная Мебель</a>
+              <a href="">Офисная Мебель</a>
             </div>
             <div class="category__item">
               <img src="/src/img/childrensroom-icon.png" alt="" />
@@ -98,7 +99,9 @@
             </div>
           </div>
           <div class="delete">
-            <img src="../src/img/free-png.ru-38.png" alt="" />
+            <img
+              src="https://img.icons8.com/material-two-tone/50/000000/delete-sign.png"
+            />
           </div>
         </div>
         <div class="cart__card">
@@ -111,7 +114,9 @@
             </div>
           </div>
           <div class="delete">
-            <img src="../src/img/free-png.ru-38.png" alt="" />
+            <img
+              src="https://img.icons8.com/material-two-tone/50/000000/delete-sign.png"
+            />
           </div>
         </div>
         <div class="cart__card">
@@ -124,15 +129,19 @@
             </div>
           </div>
           <div class="delete">
-            <img src="../src/img/free-png.ru-38.png" alt="" />
+            <img
+              src="https://img.icons8.com/material-two-tone/50/000000/delete-sign.png"
+            />
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="text">Итоговая стоимость: 6000 грн</div>
-        <button class="btn">
-          <a href="#openModal">Оформить Заказ</a>
-        </button>
+        <div class="checkout">
+          <div class="text">Итоговая стоимость: 6000 грн</div>
+          <button class="btn">
+            <a href="#openModal">Оформить Заказ</a>
+          </button>
+        </div>
 
         <!--  -->
         <div id="openModal" class="modal">
@@ -188,7 +197,7 @@
             <div>
               <ul>
                 <li><a href="#">Прихожие</a></li>
-                <li><a href="#">Офсиная Мебель</a></li>
+                <li><a href="#">Офисная Мебель</a></li>
                 <li><a href="#">Детская</a></li>
               </ul>
             </div>
@@ -209,4 +218,8 @@
     </footer>
     <!-- /.footer -->
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
