@@ -33,6 +33,12 @@ textarea {
   background: transparent;
 }
 
+.form {
+  .text {
+    margin-bottom: 20px;
+  }
+}
+
 .form__wrap {
   width: 100%;
   display: flex;
@@ -107,6 +113,7 @@ a:hover {
 }
 
 .contacts__info {
+  margin-left: 90px;
   .contacts {
     display: flex;
     justify-content: flex-start;

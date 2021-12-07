@@ -51,6 +51,11 @@
 
   .container {
     justify-content: space-between;
+
+    .text {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
   }
 
   &__search input {

@@ -76,11 +76,9 @@
     .container {
       max-width: 100%;
     }
-    .form__wrap {
-      flex-direction: column;
-    }
 
     .contacts__info {
+      margin-left: 40px;
       margin-bottom: 20px;
     }
 
@@ -97,6 +95,14 @@
 @media (max-width: 768px) {
   .category-menu .category__item {
     flex-direction: column;
+  }
+
+  .form__wrap {
+    flex-direction: column;
+
+    .contacts__info {
+      margin-left: 0px;
+    }
   }
 
   a {
@@ -153,6 +159,10 @@
     .footer__info {
       margin-top: 30px;
     }
+  }
+
+  .contacts__info-content .text {
+    font-size: 13px;
   }
 
   .modal-content {
@@ -225,6 +235,11 @@
 
   .checkout .text {
     font-size: 13px;
+  }
+
+  .form__wrap input,
+  .form__wrap textarea {
+    width: 300px !important;
   }
 }
 
