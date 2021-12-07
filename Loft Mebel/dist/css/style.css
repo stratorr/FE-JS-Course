@@ -69,8 +69,8 @@ input {
     cursor: pointer; }
   .header__top a:hover {
     color: #d74444;
-    -webkit-transition: 0.2s linear;
-    transition: 0.2s linear; }
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear; }
   .header__top-menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
