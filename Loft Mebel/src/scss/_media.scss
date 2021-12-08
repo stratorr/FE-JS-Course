@@ -212,6 +212,14 @@
       }
     }
   }
+
+  .pagination__desktop {
+    display: none;
+  }
+
+  .pagination .pagination__mobile {
+    display: block !important;
+  }
 }
 
 @media (max-width: 450px) {
