@@ -16,3 +16,9 @@
 .filter {
   margin-bottom: 30px;
 }
+
+.filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

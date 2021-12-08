@@ -821,6 +821,15 @@ a:hover {
 .filter {
   margin-bottom: 30px; }
 
+.filter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
