@@ -15,12 +15,12 @@ task("watch", () => {
   watch("src/scss/**/*.scss", scss);
 });
 
-// function cssPrefix() {
-//   return src("src/scss/**/*.css").pipe(autoprefixer()).pipe(dest("dist/css"));
-// }
+function cssPrefix() {
+  return src("src/scss/**/*.css").pipe(autoprefixer()).pipe(dest("dist/css"));
+}
 
-// task("css-prefix", cssPrefix);
+task("css-prefix", cssPrefix);
 
-// task("watch", () => {
-//   watch("src/scss/**/*.css", cssPrefix);
-// });
+task("watch", () => {
+  watch("src/scss/**/*.css", cssPrefix);
+});
