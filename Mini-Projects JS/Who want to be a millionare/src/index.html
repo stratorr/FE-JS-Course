@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who Want To Be A Millionare</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="title">Who Wants To Be a Millionare APP</div>
+      </div>
+    </header>
+    <!-- ТАЙМЕР ВРЕМЕНИ -->
+    <div class="timer"></div>
+    <section class="game">
+      <!-- ГЕНЕРАЦИЯ ВОПРОСОВ -->
+      <div class="quiz">
+        <div class="special-func"></div>
+        <div id="quizWrap"></div>
+      </div>
+      <!-- НАЧАЛО ИГРЫ, ПРИВЕТСТВИЕ -->
+      <div class="game__greetings centered">
+        <div class="container">
+          <input
+            type="text"
+            name="username"
+            id="userName"
+            placeholder="Enter Your UserName"
+            maxlength="15"
+          />
+          <button class="btn-start">Start game</button>
+        </div>
+      </div>
+
+      <!-- КОЛ-ВО ВЫИГРАННЫХ ДЕНЕГ -->
+      <ul class="points hide">
+        <li>15. 1 000 000 $</li>
+        <li>14. 600 000 $</li>
+        <li>13. 250 000 $</li>
+        <li>12. 125 000 $</li>
+        <li>11. 64 000 $</li>
+        <li>10. 32 000 $</li>
+        <li>9. 16 000 $</li>
+        <li>8. 8 000 $</li>
+        <li>7. 4 000 $</li>
+        <li>6. 2 000 $</li>
+        <li>5. 1 000 $</li>
+        <li>4. 500 $</li>
+        <li>3. 300 $</li>
+        <li>2. 200 $</li>
+        <li>1. 100 $</li>
+      </ul>
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
