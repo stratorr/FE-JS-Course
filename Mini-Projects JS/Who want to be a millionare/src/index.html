@@ -14,47 +14,43 @@
       </div>
     </header>
     <!-- ТАЙМЕР ВРЕМЕНИ -->
-    <div class="timer"></div>
+    <div class="timer">00:00</div>
     <section class="game">
       <!-- ГЕНЕРАЦИЯ ВОПРОСОВ -->
       <div class="quiz">
-        <div class="special-func"></div>
-        <div id="quizWrap"></div>
-      </div>
-      <!-- НАЧАЛО ИГРЫ, ПРИВЕТСТВИЕ -->
-      <div class="game__greetings centered">
-        <div class="container">
-          <input
-            type="text"
-            name="username"
-            id="userName"
-            placeholder="Enter Your UserName"
-            maxlength="15"
-          />
-          <button class="btn-start">Start game</button>
+        <div id="quizWrap">
+          <div class="special__option">
+            <button class="btn-default fifty-fifty">50 / 50</button>
+            <button class="btn-default call-friend">Звонок Амбрексусу</button>
+          </div>
         </div>
       </div>
-
       <!-- КОЛ-ВО ВЫИГРАННЫХ ДЕНЕГ -->
-      <ul class="points hide">
-        <li>15. 1 000 000 $</li>
-        <li>14. 600 000 $</li>
-        <li>13. 250 000 $</li>
-        <li>12. 125 000 $</li>
-        <li>11. 64 000 $</li>
-        <li>10. 32 000 $</li>
-        <li>9. 16 000 $</li>
-        <li>8. 8 000 $</li>
-        <li>7. 4 000 $</li>
-        <li>6. 2 000 $</li>
-        <li>5. 1 000 $</li>
-        <li>4. 500 $</li>
-        <li>3. 300 $</li>
-        <li>2. 200 $</li>
-        <li>1. 100 $</li>
+      <ul class="points">
+        <li>3 000 000 $</li>
+        <li>2 000 000 $</li>
+        <li>1 000 000 $</li>
+        <li>600 000 $</li>
+        <li>250 000 $</li>
+        <li>125 000 $</li>
+        <li>64 000 $</li>
+        <li>32 000 $</li>
+        <li>16 000 $</li>
+        <li>8 000 $</li>
+        <li>1 000 $</li>
+        <li>500 $</li>
+        <li>300 $</li>
+        <li>200 $</li>
+        <li>100 $</li>
       </ul>
     </section>
-
+    <div class="game__end hide">
+      <div class="title">Game Over</div>
+      <div class="earnPoints title">0</div>
+      <div class="center">
+        <button class="restart__btn btn">Restart Game</button>
+      </div>
+    </div>
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
   </body>

@@ -18,6 +18,45 @@ ul {
   font-size: 24px;
 }
 
+.btn {
+  margin-top: 30px;
+  cursor: pointer;
+  border: 1px solid black;
+  outline: none;
+  width: 400px;
+  height: 60px;
+  border-radius: 6px;
+  color: #fff;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  transition: 0.1s linear;
+  background: #29296e;
+  letter-spacing: 2px;
+}
+
+.btn-default {
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+  background: #29296e;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.1s linear;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-default:hover {
+  background: transparent;
+  border: 1px solid orange;
+  color: black;
+}
+
 input {
   text-align: center;
   border: 1px solid black;
@@ -50,57 +89,6 @@ input {
   align-items: center;
 }
 
-.game__greetings {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  width: 10%;
-}
-
-.container {
-  height: 300px;
-  width: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.centered {
-  position: fixed; /* or absolute */
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 100px;
-}
-
-.btn-start {
-  margin-top: 30px;
-  cursor: pointer;
-  border: 1px solid black;
-  outline: none;
-  width: 400px;
-  height: 60px;
-  border-radius: 6px;
-  color: #fff;
-  background: transparent;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  transition: 0.1s linear;
-  background: #29296e;
-  letter-spacing: 2px;
-}
-
-.btn-start:hover {
-  border: 2px solid orange;
-}
-
 .hide {
   display: none;
 }
@@ -125,23 +113,16 @@ input {
   color: #fff;
 }
 
-.footer {
-  width: 100%;
-  padding: 30px 15px;
-  background-color: #29296e;
-}
-
 /* JS */
 
 .quiz {
   display: flex;
-  flex-direction: column;
   align-self: flex-end;
 }
 
 /* (A) WRAPPER */
 #quizWrap {
-  max-width: 600px;
+  max-width: 100%;
   /* RECOMMENDED FIXED HEIGHT IF YOU HAVE CONTENT BELOW THE QUIZ */
   /* SO THAT PAGE LAYOUT DOES NOT "JUMP" */
   /* height: 250px; */
@@ -168,6 +149,7 @@ input {
   display: none;
 }
 #quizAns label {
+  width: 400px;
   background: #fafafa;
   border: 1px solid #eee;
   border-radius: 10px;
@@ -192,3 +174,42 @@ input {
 }
 
 /* Game Over */
+
+.game__end {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.game__end .title {
+  margin-top: 50px;
+  font-size: 55px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__end .btn {
+  margin-top: 50px;
+}
+
+.restart__btn:hover {
+  border: 1px solid orange;
+  background: #fff;
+  color: black;
+}
+
+.special__option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
