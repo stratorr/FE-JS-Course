@@ -122,7 +122,6 @@
       restart();
     });
   }
-
   //RestartGame
   function restart() {
     callFriend.classList.remove("hide");
@@ -130,6 +129,9 @@
       gameEnd.classList.add("hide");
       quiz.now = 0;
       quiz.score = 0;
+      fifty.removeAttribute("disabled", "disabled");
+      callFriend.removeAttribute("disabled", "disabled");
+      draw();
       ul.forEach((li) => li.classList.remove("orange"));
     }, 300);
   }
@@ -166,7 +168,7 @@
       }
 
       if (el.style.backgroundColor === "black" && el.hasAttribute("data-idx")) {
-        dataWrongIndex.push(el.getAttribute("data-idx", ""));
+        dataWrongIndex.push(el.getAttribute("data-idx"));
       }
     }
     let random =

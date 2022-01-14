@@ -213,3 +213,14 @@ input {
   justify-content: space-between;
   align-items: center;
 }
+
+.timer {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  border: 2px solid #29296e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
