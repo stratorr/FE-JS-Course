@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson__12-JS(DOM)</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Задание №1. Дочерние элементы в DOM -->
+    <div>Пользователи:</div>
+    <ul>
+      <li>Джон</li>
+      <li>Пит</li>
+    </ul>
+    <!-- Задание №3. Выделите ячейки по диагонали -->
+    <hr />
+    <table>
+      <tr>
+        <td>1:1</td>
+        <td>2:1</td>
+        <td>3:1</td>
+        <td>4:1</td>
+        <td>5:1</td>
+      </tr>
+      <tr>
+        <td>1:2</td>
+        <td>2:2</td>
+        <td>3:2</td>
+        <td>4:2</td>
+        <td>5:2</td>
+      </tr>
+      <tr>
+        <td>1:3</td>
+        <td>2:3</td>
+        <td>3:3</td>
+        <td>4:3</td>
+        <td>5:3</td>
+      </tr>
+      <tr>
+        <td>1:4</td>
+        <td>2:4</td>
+        <td>3:4</td>
+        <td>4:4</td>
+        <td>5:4</td>
+      </tr>
+      <tr>
+        <td>1:5</td>
+        <td>2:5</td>
+        <td>3:5</td>
+        <td>4:5</td>
+        <td>5:5</td>
+      </tr>
+    </table>
+
+    <!-- Задание 3: Поиск Элементов -->
+    <br />
+    <br />
+
+    <form name="search">
+      <label
+        >Search the site:
+        <input type="text" name="search" />
+      </label>
+      <input type="submit" value="Search!" />
+    </form>
+    <hr />
+    <form name="search-person">
+      Search the visitors:
+      <table id="age-table">
+        <tr>
+          <td>Age:</td>
+          <td id="age-list">
+            <label>
+              <input type="radio" name="age" value="young" />less than 18</label
+            >
+            <label>
+              <input type="radio" name="age" value="mature" />18-50</label
+            >
+            <label>
+              <input type="radio" name="age" value="senior" />more than
+              50</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Additionally:</td>
+          <td>
+            <input type="text" name="info[0]" />
+            <input type="text" name="info[1]" />
+            <input type="text" name="info[2]" />
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="Search!" />
+    </form>
+    <br />
+    <br />
+    <hr />
+
+    <!-- Задание №4. Подсчет потомков -->
+
+    <ul class="food">
+      <li>
+        Фрукты
+        <ul>
+          <li>
+            Тропические
+            <ul>
+              <li>Бананы</li>
+              <li>Ананасы</li>
+              <li>Манго</li>
+              <li>Папайя</li>
+            </ul>
+          </li>
+          <li>
+            Другие
+            <ul>
+              <li>Яблоки</li>
+              <li>Груши</li>
+              <li>Мандарины</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Рыбы
+        <ul>
+          <li>
+            Морские
+            <ul>
+              <li>Парусник</li>
+              <li>Ерш</li>
+            </ul>
+          </li>
+          <li>
+            Речные
+            <ul>
+              <li>Карась</li>
+              <li>Карп</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <br />
+    <br />
+    <hr />
+    <!-- Задание №8. Очистите элемент -->
+    <ol id="elem">
+      <li>Привет</li>
+      <li>Мир</li>
+    </ol>
+    <br />
+    <br />
+    <hr />
+    <!-- Задание №9. Почему остаётся "aaa"? -->
+    <table id="table">
+      aaa
+      <tr>
+        <td>Тест</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <!-- Задание №10. Создайте список -->
+    <h4>Задание №10. Создайте список</h4>
+    <div class="container"></div>
+    <hr />
+    <!-- Задание №11. Вставьте HTML в список -->
+    <ul id="ul">
+      <li id="one">1</li>
+      <li id="two">4</li>
+    </ul>
+    <script src="js/script.js"></script>
+  </body>
+</html>
