@@ -110,9 +110,9 @@
 
   //GameOver
   function gameOver() {
-    if (quiz.now === 5) earnPoints.textContent = "1000 $";
-    if (quiz.now === 10) earnPoints.textContent = "125 000 $";
-    earnPoints.textContent = money;
+    if (quiz.now >= 4) earnPoints.textContent = "Вы выиграли: 1000 $";
+    if (quiz.now >= 9) earnPoints.textContent = "Вы выиграли: 125 000 $";
+    if (quiz.now < 4) earnPoints.textContent = "Вы выиграли: 0 $";
     setTimeout(() => {
       gameEnd.classList.remove("hide");
     }, 1000);
@@ -135,21 +135,61 @@
   }
 
   //SPECIAL FUNC
+  let dataWrongIndex = [];
 
   function fiftyOption() {
-    console.log("50/50");
+    for (const el of quiz.hAns.children) {
+      //Проверка на верный ответ
+
+      if (quiz.data[quiz.now].answer === 0) {
+        if (el.getAttribute("data-idx") === "0") {
+          el.setAttribute("data", "50-true");
+        }
+      } else if (quiz.data[quiz.now].answer === 1) {
+        if (el.getAttribute("data-idx") === "1") {
+          el.setAttribute("data", "50-true");
+        }
+      } else if (quiz.data[quiz.now].answer === 2) {
+        if (el.getAttribute("data-idx") === "2") {
+          el.setAttribute("data", "50-true");
+        }
+      } else if (quiz.data[quiz.now].answer === 3) {
+        if (el.getAttribute("data-idx") === "3") {
+          el.setAttribute("data", "50-true");
+        }
+      }
+
+      //Закрасить неверные ответы
+
+      if (!el.getAttribute("data", "50-true")) {
+        el.style.backgroundColor = "black";
+      }
+
+      if (el.style.backgroundColor === "black" && el.hasAttribute("data-idx")) {
+        dataWrongIndex.push(el.getAttribute("data-idx", ""));
+      }
+    }
+    let random =
+      dataWrongIndex[Math.floor(Math.random() * dataWrongIndex.length)];
+
+    for (const label of quiz.hAns.children) {
+      if (label.getAttribute("data-idx") === random) {
+        label.style.backgroundColor = "transparent";
+      }
+    }
+    fifty.setAttribute("disabled", "disabled");
   }
 
   function friendOption() {
     if (quiz.data[quiz.now].answer === 0) {
-      alert("A");
+      alert("Я думаю ответ A");
     } else if (quiz.data[quiz.now].answer === 1) {
-      alert("B");
+      alert("Я думаю ответ B");
     } else if (quiz.data[quiz.now].answer === 2) {
-      alert("C");
+      alert("Я думаю ответ C");
     } else {
-      alert("D");
+      alert("Я думаю ответ D");
     }
-    callFriend.classList.add("hide");
+    callFriend.setAttribute("disabled", "disabled");
   }
 })();

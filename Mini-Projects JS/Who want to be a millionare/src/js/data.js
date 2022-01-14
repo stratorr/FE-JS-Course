@@ -1,39 +1,29 @@
 const quiz = {
   data: [
     {
-      question: "Какие функции выполняет JS?",
+      question: "Какой герой мультфильма живет в ананасе под водой?",
       option: [
-        "A: Создает стилевое оформление сайта",
-        "B: Отвечает за работу с базами данных",
-        "C: Отвечает за функции на стороне клиента",
-        "D: Выполняет работу с сервером",
+        "A: Камбала",
+        "B: Немо",
+        "C: Рик и Морти",
+        "D: Губка Боб Квадратные Штаны",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 3,
     },
     {
-      question: "2 + 2?",
-      option: ["A: 2", "B: 4", "C: 3", "D: 5"],
-      answer: 1, // arrays start with 0, so answer is 70 meters
+      question: "Что является национальным животным Шотландии?",
+      option: ["A: Лошадь", "B: Единорог", "C: Волк", "D: Корова"],
+      answer: 1,
     },
     {
-      question: "Какие функции выполняет JS?",
-      option: [
-        "A: Создает стилевое оформление сайта",
-        "B: Отвечает за работу с базами данных",
-        "C: Отвечает за функции на стороне клиента",
-        "D: Выполняет работу с сервером",
-      ],
-      answer: 0, // arrays start with 0, so answer is 70 meters
+      question: " Какая страна производит больше всего кофе в мире?",
+      option: ["A: Колумбия", "B: Индонезия", "C: Бразилия", "D: Вьетнам"],
+      answer: 2,
     },
     {
-      question: "Какие функции выполняет JS?",
-      option: [
-        "A: Создает стилевое оформление сайта",
-        "B: Отвечает за работу с базами данных",
-        "C: Отвечает за функции на стороне клиента",
-        "D: Выполняет работу с сервером",
-      ],
-      answer: 3, // arrays start with 0, so answer is 70 meters
+      question: " Какой национальный вид спорта Канады?",
+      option: ["A: Боулинг", "B: Баскетбол", "C: Лакросс", "D: Футбол"],
+      answer: 3,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -43,7 +33,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -53,7 +43,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -63,7 +53,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -73,7 +63,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -83,7 +73,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -93,7 +83,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -103,7 +93,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -113,7 +103,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -123,7 +113,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -133,7 +123,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
     {
       question: "Какие функции выполняет JS?",
@@ -143,7 +133,7 @@ const quiz = {
         "C: Отвечает за функции на стороне клиента",
         "D: Выполняет работу с сервером",
       ],
-      answer: 2, // arrays start with 0, so answer is 70 meters
+      answer: 2,
     },
   ],
 
