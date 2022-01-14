@@ -117,7 +117,7 @@ input {
 
 .quiz {
   display: flex;
-  align-self: flex-end;
+  align-self: center;
 }
 
 /* (A) WRAPPER */
@@ -223,4 +223,20 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #29296e;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 10px;
+}
+
+.footer .title {
+  font-size: 17px;
 }
