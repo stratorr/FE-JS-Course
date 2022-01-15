@@ -49,7 +49,7 @@
 
   function draw() {
     // (C1) QUESTION
-    quiz.hQn.textContent = quiz.now + "." + " " + quiz.data[quiz.now].question;
+    quiz.hQn.textContent = quiz.data[quiz.now].question;
 
     // (C2) OPTIONS
     quiz.hAns.textContent = "";
@@ -106,7 +106,7 @@
         quiz.hAns.textContent = "";
         stopTimer();
       }
-    }, 500);
+    }, 1000);
   }
 
   //GameOver
@@ -173,11 +173,11 @@
         dataWrongIndex.push(el.getAttribute("data-idx"));
       }
     }
-    let random =
+    let randomWrongIndex =
       dataWrongIndex[Math.floor(Math.random() * dataWrongIndex.length)];
 
     for (const label of quiz.hAns.children) {
-      if (label.getAttribute("data-idx") === random) {
+      if (label.getAttribute("data-idx") === randomWrongIndex) {
         label.style.backgroundColor = "transparent";
       }
     }

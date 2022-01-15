@@ -49,13 +49,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-.btn-default:hover {
+/* .btn-default:hover {
   background: transparent;
   border: 1px solid orange;
   color: black;
-}
+} */
 
 input {
   text-align: center;
@@ -95,7 +96,7 @@ input {
 
 .points {
   padding: 10px 10px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 6px;
 }
 
