@@ -241,6 +241,10 @@ input {
   font-size: 17px;
 }
 
+.special {
+  color: #00a1a1;
+}
+
 /* TIMER */
 
 .base-timer {

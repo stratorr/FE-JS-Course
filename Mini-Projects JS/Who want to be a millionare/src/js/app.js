@@ -49,7 +49,7 @@
 
   function draw() {
     // (C1) QUESTION
-    quiz.hQn.textContent = quiz.data[quiz.now].question;
+    quiz.hQn.textContent = quiz.now + "." + " " + quiz.data[quiz.now].question;
 
     // (C2) OPTIONS
     quiz.hAns.textContent = "";
@@ -83,7 +83,7 @@
     if (correct) {
       quiz.score++;
       option.classList.add("correct");
-
+      resetTimer();
       for (let i = 0; i < ul.length; i++) {
         if (!ul[ul.length - 1 - i].classList.contains("orange")) {
           ul[ul.length - 1 - i].classList.add("orange");
@@ -102,10 +102,11 @@
       if (quiz.now < quiz.data.length) {
         draw();
       } else {
-        quiz.hQn.textContent = `Вы ответили на ${quiz.score} из ${quiz.data.length} правильно и заработали ${money}.`;
+        quiz.hQn.textContent = `Вы ответили на ${quiz.score} из ${quiz.data.length} вопросов правильно и заработали ${money}.`;
         quiz.hAns.textContent = "";
+        stopTimer();
       }
-    }, 1000);
+    }, 500);
   }
 
   //GameOver
@@ -132,6 +133,7 @@
       fifty.removeAttribute("disabled", "disabled");
       callFriend.removeAttribute("disabled", "disabled");
       draw();
+      resetTimer();
       ul.forEach((li) => li.classList.remove("orange"));
     }, 300);
   }
@@ -206,11 +208,11 @@
       color: "green",
     },
     warning: {
-      color: "orange",
+      color: "green",
       threshold: WARNING_THRESHOLD,
     },
     alert: {
-      color: "red",
+      color: "green",
       threshold: ALERT_THRESHOLD,
     },
   };
@@ -221,7 +223,7 @@
   let timerInterval = null;
   let remainingPathColor = COLOR_CODES.info.color;
 
-  document.getElementById("app").innerHTML = `
+  document.getElementById("timer").innerHTML = `
 <div class="base-timer">
   <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <g class="base-timer__circle">
@@ -249,6 +251,24 @@
 
   function onTimesUp() {
     clearInterval(timerInterval);
+  }
+
+  function resetTimer() {
+    clearInterval(timerInterval);
+    timePassed = 0;
+    onTimesUp();
+    startTimer();
+  }
+
+  function stopTimer() {
+    clearInterval(timerInterval);
+    timeLeft = 0;
+    timePassed = 0;
+    if (timeLeft === 0) {
+      clearInterval(timerInterval);
+      timeLeft = 0;
+      timePassed = 0;
+    }
   }
 
   function startTimer() {
@@ -311,5 +331,3 @@
       .setAttribute("stroke-dasharray", circleDasharray);
   }
 })();
-
-//AUDIO
