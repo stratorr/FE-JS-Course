@@ -178,18 +178,22 @@ input {
 /* Game Over */
 
 .game__end {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: black;
-  width: 100%;
-  height: 100vh;
+  position: absolute;
+  top: 220px;
+  left: 150px;
+  background-color: white;
+  border: 2px solid #29296e;
+  border-radius: 6px;
+  color: black;
+  width: 50%;
+  height: 50%;
+  z-index: 999;
 }
 
 .game__end .title {
   margin-top: 50px;
   font-size: 55px;
-  color: #fff;
+  color: black;
   text-align: center;
   text-transform: uppercase;
 }
@@ -202,6 +206,7 @@ input {
 
 .game__end .btn {
   margin-top: 50px;
+  border: none;
 }
 
 .restart__btn:hover {
@@ -228,7 +233,7 @@ input {
 }
 
 .special {
-  color: #00a1a1;
+  color: #c22a3e;
 }
 
 /* TIMER */
