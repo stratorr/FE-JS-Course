@@ -205,19 +205,19 @@
 
   const COLOR_CODES = {
     info: {
-      color: "green",
+      color: "orange",
     },
     warning: {
-      color: "green",
+      color: "orange",
       threshold: WARNING_THRESHOLD,
     },
     alert: {
-      color: "green",
+      color: "orange",
       threshold: ALERT_THRESHOLD,
     },
   };
 
-  const TIME_LIMIT = 30;
+  const TIME_LIMIT = 31;
   let timePassed = 0;
   let timeLeft = TIME_LIMIT;
   let timerInterval = null;
