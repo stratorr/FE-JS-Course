@@ -12,11 +12,11 @@
 
   //Events
   fifty.addEventListener("click", () => {
-    fiftyOption();
+    fiftyFunc();
   });
 
   callFriend.addEventListener("click", () => {
-    friendOption();
+    callFriendFunc();
   });
 
   window.addEventListener("load", startGame());
@@ -26,8 +26,6 @@
   function startGame() {
     init();
   }
-
-  //ПОДПРАВИТЬ
 
   function init() {
     // (B1) WRAPPER
@@ -138,10 +136,11 @@
     }, 300);
   }
 
-  //SPECIAL FUNC
+  //SPECIAL FUNCTIONS
+
   let dataWrongIndex = [];
 
-  function fiftyOption() {
+  function fiftyFunc() {
     for (const el of quiz.hAns.children) {
       //Проверка на верный ответ
 
@@ -186,7 +185,7 @@
     fifty.setAttribute("disabled", "disabled");
   }
 
-  function friendOption() {
+  function callFriendFunc() {
     if (quiz.data[quiz.now].answer === 0) {
       alert("Я думаю ответ A");
     } else if (quiz.data[quiz.now].answer === 1) {

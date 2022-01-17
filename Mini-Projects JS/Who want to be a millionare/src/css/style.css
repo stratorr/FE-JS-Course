@@ -134,8 +134,9 @@ input {
   padding: 20px;
   background: #29296e;
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 10px;
+  word-wrap: normal;
 }
 
 /* (C) ANSWERS */
