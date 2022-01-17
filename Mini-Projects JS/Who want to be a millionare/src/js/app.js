@@ -166,10 +166,11 @@
       //Закрасить неверные ответы
 
       if (!el.getAttribute("data", "50-true")) {
-        el.style.backgroundColor = "black";
+        el.style.backgroundColor = "white";
+        el.style.color = "white";
       }
 
-      if (el.style.backgroundColor === "black" && el.hasAttribute("data-idx")) {
+      if (el.style.backgroundColor === "white" && el.hasAttribute("data-idx")) {
         dataWrongIndex.push(el.getAttribute("data-idx"));
       }
     }
@@ -179,6 +180,7 @@
     for (const label of quiz.hAns.children) {
       if (label.getAttribute("data-idx") === randomWrongIndex) {
         label.style.backgroundColor = "transparent";
+        label.style.color = "black";
       }
     }
     fifty.setAttribute("disabled", "disabled");
