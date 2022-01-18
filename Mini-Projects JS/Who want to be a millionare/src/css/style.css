@@ -52,6 +52,22 @@ ul {
   cursor: pointer;
 }
 
+.btn-default:hover {
+  background-color: transparent;
+  border: 1px solid orange;
+  color: black;
+}
+
+.useBtn {
+  background-color: #e43333;
+}
+.useBtn:hover {
+  cursor: not-allowed;
+  background-color: #e43333ed;
+  color: white;
+  border: none;
+}
+
 /* .btn-default:hover {
   background: transparent;
   border: 1px solid orange;
@@ -119,6 +135,7 @@ input {
 .quiz {
   display: flex;
   align-self: center;
+  flex-direction: column;
 }
 
 /* (A) WRAPPER */
@@ -186,11 +203,12 @@ input {
   border-radius: 6px;
   color: black;
   width: 50%;
-  height: 50%;
+  min-height: 50%;
   z-index: 999;
 }
 
 .game__end .title {
+  letter-spacing: 5px;
   margin-top: 50px;
   font-size: 55px;
   color: black;
@@ -207,6 +225,10 @@ input {
 .game__end .btn {
   margin-top: 50px;
   border: none;
+}
+
+.game__end .center {
+  padding-bottom: 50px;
 }
 
 .restart__btn:hover {
@@ -290,4 +312,30 @@ input {
   align-items: center;
   justify-content: center;
   font-size: 32px;
+}
+
+.call__title {
+  margin-bottom: 80px;
+}
+
+.card {
+  left: 60%;
+  top: 150px;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 12%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__title {
+  font-weight: bold;
+}
+
+.container {
+  padding: 2px 16px;
 }

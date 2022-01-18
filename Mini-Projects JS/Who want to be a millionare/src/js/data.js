@@ -99,9 +99,3 @@ const quiz = {
   now: 0, // current question
   score: 0, // current score
 };
-
-//SOUNDS:
-
-// var audio = new Audio();
-// audio.preload = "auto";
-// audio.src = "../src/audio/correct_Answer.mp3";

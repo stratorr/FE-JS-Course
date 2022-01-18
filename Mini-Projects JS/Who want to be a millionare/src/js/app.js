@@ -4,18 +4,22 @@
   let gameEnd = document.querySelector(".game__end");
   let restartBtn = document.querySelector(".restart__btn");
   let earnPoints = document.querySelector(".earnPoints");
-  let timer = document.querySelector(".timer");
   let money = "0$";
   //special
   let fifty = document.querySelector(".fifty-fifty");
   let callFriend = document.querySelector(".call-friend");
+  let cardTitle = document.querySelector(".card__title");
+  let card = document.querySelector(".card");
 
   //Events
+
   fifty.addEventListener("click", () => {
+    fifty.classList.add("useBtn");
     fiftyFunc();
   });
 
   callFriend.addEventListener("click", () => {
+    callFriend.classList.add("useBtn");
     callFriendFunc();
   });
 
@@ -99,6 +103,7 @@
     setTimeout(() => {
       if (quiz.now < quiz.data.length) {
         draw();
+        card.classList.add("hide");
       } else {
         quiz.hQn.textContent = `Вы ответили на ${quiz.score} из ${quiz.data.length} вопросов правильно и заработали ${money}.`;
         quiz.hAns.textContent = "";
@@ -109,6 +114,7 @@
 
   //GameOver
   function gameOver() {
+    card.classList.add("hide");
     if (quiz.now >= 4) earnPoints.textContent = "Вы выиграли: 1000 $";
     if (quiz.now >= 9) earnPoints.textContent = "Вы выиграли: 125 000 $";
     if (quiz.now < 4) earnPoints.textContent = "Вы выиграли: 0 $";
@@ -123,6 +129,9 @@
   }
   //RestartGame
   function restart() {
+    fifty.classList.remove("useBtn");
+    callFriend.classList.remove("useBtn");
+    card.classList.add("hide");
     callFriend.classList.remove("hide");
     setTimeout(() => {
       gameEnd.classList.add("hide");
@@ -186,14 +195,15 @@
   }
 
   function callFriendFunc() {
+    card.classList.remove("hide");
     if (quiz.data[quiz.now].answer === 0) {
-      alert("Я думаю ответ A");
+      cardTitle.textContent = "Я думаю ответ A верный";
     } else if (quiz.data[quiz.now].answer === 1) {
-      alert("Я думаю ответ B");
+      cardTitle.textContent = "Я думаю ответ B верный";
     } else if (quiz.data[quiz.now].answer === 2) {
-      alert("Я думаю ответ C");
+      cardTitle.textContent = "Я думаю ответ C верный";
     } else {
-      alert("Я думаю ответ D");
+      cardTitle.textContent = "Я думаю ответ D верный";
     }
     callFriend.setAttribute("disabled", "disabled");
   }
