@@ -7,13 +7,56 @@
   const min = document.querySelector(".from"); // от
   const max = document.querySelector(".to"); // до
   const button = document.querySelector(".btn");
-  const repeatNums = document.querySelector(".repeat-numbers");
+  const repeatNums = document.querySelector(".num_repeat");
 
   //EVENTS
 
   button.addEventListener("click", () => {
-    showNumbers(min.value, max.value, amount.value);
+    if (repeatNums.checked) {
+      while (output.firstChild) {
+        output.removeChild(output.firstChild);
+      }
+
+      generateNumberWithoutRepeat(min.value, max.value, amount.value);
+    } else {
+      showNumbers(min.value, max.value, amount.value);
+    }
   });
+
+  function generateNumberWithoutRepeat(min, max, amount) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    n = Number(amount);
+
+    let arrWithoutRepeat = [...Array(max - min + 1).keys()]
+      .map((i) => i + min) // range
+      .reduce(
+        (arr, elt) => (
+          arr.splice(Math.random() * (arr.length + 1), 0, elt), arr
+        ),
+        []
+      ) // shuffle
+      .slice(0, n); // slice n
+
+    if (min > max) {
+      arrWithoutRepeat = [...Array(min - max + 1).keys()]
+        .map((i) => i + max) // range
+        .reduce(
+          (arr, elt) => (
+            arr.splice(Math.random() * (arr.length + 1), 0, elt), arr
+          ),
+          []
+        ) // shuffle
+        .slice(0, n); // slice n
+    }
+
+    arrWithoutRepeat.forEach((num) => {
+      const newNum = document.createElement("div");
+      newNum.classList.add("num");
+      newNum.textContent = num;
+      output.appendChild(newNum);
+    });
+  }
 
   // FUNCTIONS
 

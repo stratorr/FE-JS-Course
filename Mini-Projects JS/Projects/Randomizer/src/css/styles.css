@@ -96,3 +96,13 @@ input {
 .num {
   margin: 20px;
 }
+
+.wrap {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.wrap input {
+  margin-left: 10px;
+}
