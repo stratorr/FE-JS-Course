@@ -39,4 +39,8 @@
       output.appendChild(newNum);
     }
   }
+
+  window.addEventListener("load", () => {
+    num.textContent = generateRandomNumber(0, 100);
+  });
 })();
