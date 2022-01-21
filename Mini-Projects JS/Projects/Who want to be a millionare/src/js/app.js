@@ -115,8 +115,8 @@
   //GameOver
   function gameOver() {
     card.classList.add("hide");
-    if (quiz.now >= 4) earnPoints.textContent = "Вы выиграли: 1000 $";
-    if (quiz.now >= 9) earnPoints.textContent = "Вы выиграли: 125 000 $";
+    if (quiz.now > 4) earnPoints.textContent = "Вы выиграли: 1000 $";
+    if (quiz.now > 9) earnPoints.textContent = "Вы выиграли: 125 000 $";
     if (quiz.now < 4) earnPoints.textContent = "Вы выиграли: 0 $";
     setTimeout(() => {
       gameEnd.classList.remove("hide");

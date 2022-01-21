@@ -16,7 +16,6 @@
       while (output.firstChild) {
         output.removeChild(output.firstChild);
       }
-
       generateNumberWithoutRepeat(min.value, max.value, amount.value);
     } else {
       showNumbers(min.value, max.value, amount.value);
