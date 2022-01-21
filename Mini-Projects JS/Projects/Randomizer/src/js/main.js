@@ -9,6 +9,10 @@
   const button = document.querySelector(".btn");
   const repeatNums = document.querySelector(".num_repeat");
 
+  if (min.value > 100) {
+    min.value = "";
+  }
+
   //EVENTS
 
   button.addEventListener("click", () => {
@@ -20,6 +24,7 @@
     } else {
       showNumbers(min.value, max.value, amount.value);
     }
+    checkInput();
   });
 
   function generateNumberWithoutRepeat(min, max, amount) {
@@ -57,6 +62,8 @@
     });
   }
 
+  function checkInput() {}
+
   // FUNCTIONS
 
   // Генерация Рандомного Числа
@@ -83,6 +90,6 @@
   }
 
   window.addEventListener("load", () => {
-    num.textContent = generateRandomNumber(0, 100);
+    num.textContent = generateRandomNumber(1, 100);
   });
 })();
