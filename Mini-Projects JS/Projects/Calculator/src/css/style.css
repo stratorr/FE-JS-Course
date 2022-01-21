@@ -7,7 +7,6 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  background-color: black;
 }
 
 button {
@@ -19,7 +18,7 @@ button {
   border-radius: 50%;
   border: none;
   color: #fff;
-  background-color: #414141;
+  background-color: #d13131;
   cursor: pointer;
   transition: 0.1s ease-in;
 }
@@ -47,10 +46,15 @@ button:hover {
   display: flex;
   align-items: center;
   height: 70px;
-  background-color: rgb(253, 174, 28);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
 }
 
 .title {
+  text-transform: uppercase;
   font-size: 24px;
   color: #fff;
 }
@@ -78,8 +82,8 @@ button:hover {
   border-bottom-right-radius: 50px;
 }
 
-.orange {
-  background-color: orange;
+.lightBlue {
+  background-color: #00a6eb;
   font-style: bold;
 }
 
