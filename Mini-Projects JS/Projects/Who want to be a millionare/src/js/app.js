@@ -107,6 +107,8 @@
       } else {
         quiz.hQn.textContent = `Вы ответили на ${quiz.score} из ${quiz.data.length} вопросов правильно и заработали ${money}.`;
         quiz.hAns.textContent = "";
+        callFriend.setAttribute("disabled", "disabled");
+        fifty.setAttribute("disabled", "disabled");
         stopTimer();
       }
     }, 1000);
@@ -228,7 +230,7 @@
     },
   };
 
-  const TIME_LIMIT = 30;
+  const TIME_LIMIT = 60;
   let timePassed = 0;
   let timeLeft = TIME_LIMIT;
   let timerInterval = null;

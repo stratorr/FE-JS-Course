@@ -9,10 +9,6 @@
   const button = document.querySelector(".btn");
   const repeatNums = document.querySelector(".num_repeat");
 
-  if (min.value > 100) {
-    min.value = "";
-  }
-
   //EVENTS
 
   button.addEventListener("click", () => {
